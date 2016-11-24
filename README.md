@@ -14,3 +14,8 @@
   22/11/2016
 
     Created CSS file and added to css folder
+
+  24/11/2016
+
+    Added Layout and Menu System for the website in both html and css
+    CSS Master File is linked on all Pages
