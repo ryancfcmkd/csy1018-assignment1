@@ -1,55 +1,103 @@
 html, body {
   margin: 0;
-
 }
 body {
+  /*z-index: -1;*/
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+
 }
 .navigation {
+  /*z-index: 2;*/
   list-style: none;
   margin: 0;
   background-color: grey;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 .navigation a {
   text-decoration: none;
   display: block;
   padding: 1em;
   color: white;
+
 }
+/* .navigation a:hover, .navigation a:visited {
+
+  border-style: solid;
+  border-bottom-color: purple;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+} */
+ .navigation a::after{
+   border-style: solid;
+   border-bottom-color: lightgreen;
+ }
+
+li {
+  border-bottom: solid purple;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
 .main-header {
+  /*z-index: 2;*/
   flex: 0 1 auto;
-  box-shadow:
+  min-height: 100%;
 }
 .logo-text {
   text-align: center;
 }
+.heading_wrapper {
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: lightblue;
+}
 .site-wrapper {
+padding-top: 8%;
+padding-bottom: 50px;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   flex: 1 auto;
   margin: 0;
   background-color: red;
+  min-height: inherit;
 }
 .footer {
+  z-index: 3;
   text-align: center;
   font-family: sans-serif;
   background-color: silver;
-}
-
-.content p {
-  margin: 0;
-  text-align: center;
+  overflow: hidden;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  height: 50px;
 }
 .content {
-margin: 5em;
+z-index: 1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-self: center;
+
+height: auto;
+width: 80%;
 background: pink;
 box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+border-radius: 5px;
+align-items: center;
+
 }
+
 @media all and (max-width: 600px) {
   .navigation {
     flex-flow: column wrap;
@@ -58,7 +106,11 @@ box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   .navigation a {
     text-align: center;
     padding: 10px;
-    border-top: 1px solid rgba(255,255,255,0.3);
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    /*border-top: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(0,0,0,0.1);*/
+  }
+  .site-wrapper {
+    padding-top: 60%;
+    padding-bottom:20%;
   }
 }
