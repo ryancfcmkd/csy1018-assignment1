@@ -79,7 +79,7 @@ align-items: center;
 }
 
 /* For Some reason this works correctly in chrome dev tools but semi works outside 200px difference */
-@media (max-width:768px) {
+@media (max-width:968px) {
   .navigation {
     flex-direction: column;
     flex-flow: column;
