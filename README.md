@@ -26,3 +26,11 @@
     Box shadows added but need tweaking to get the right level to them
     Media Queries work correctly with nav and the site wrapper to still produce the card layout, needed to add in padding to correctly work like its a desktop styling
     Nav now also links to everypage
+
+  29/11/2016
+
+    Started to add colourings to the website to help with material design by using materialpalette.com
+
+    Card layout is nearly finished just need to fix box shadows
+
+    Going to add a animation to a page for a profile image and possibly for some social media links
