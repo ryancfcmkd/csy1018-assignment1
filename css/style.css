@@ -6,6 +6,7 @@
   font-family: 'Lato', sans-serif;)   */
 html, body {
   margin: 0;
+  padding: 0;
 }
 body {
   z-index: -1;
@@ -13,15 +14,24 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+.navigation_wrapper {
+  z-index: 2;
+  padding-left: 10em;
+  padding-right: 10em;
+  background-color: #2196f3;/* Primary Colour */
+box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
 .navigation {
   z-index: 2;
   list-style: none;
   margin: 0;
-  background-color: #2196f3;/* Primary Colour */
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 .navigation a {
   text-decoration: none;
@@ -29,7 +39,9 @@ body {
   padding: 1em;
   color: white;
 }
-
+.navigation ul {
+  padding: 0;
+}
 
 .navigation a:hover {
   animation: changecolour 1s linear;
@@ -61,7 +73,7 @@ body {
   flex: 1 auto;
   margin: 0;
   background-color: rgb(194, 189, 195);
-  padding-top: 100px;
+  padding-top: 120px;
 }
 .footer {
   display: flex;
@@ -100,7 +112,6 @@ box-shadow: 19px 0 38px rgba(0, 0, 0, 0.30); , 15px 0 12px rgba(0,0,0,0.22);
   align-self: center;
   text-align: center;
 }
-
 .content, .content_1 /* Styling the content cards, if new cards are need just add here */ {
   z-index: 1;
   display: flex;
@@ -114,11 +125,13 @@ box-shadow: 19px 0 38px rgba(0, 0, 0, 0.30); , 15px 0 12px rgba(0,0,0,0.22);
   /*box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);*/
   border-radius: 5px;
   align-items: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 /*  */
-.content {
+/*.content {
 margin-top: 5em;
-}
+}*/
 .content_1 {
 /*  */
   margin-top: 2em;
@@ -132,25 +145,40 @@ margin-top: 5em;
   background-color: #1976d2; /* Dark Primary Colour */
   color: #FFFFFF; /* Font Colour */
 }
-
-
-
-
-
-
 /* For Some reason this works correctly in chrome dev tools but semi works outside 200px difference */
 @media (max-width:600px) {
+  .navigation_wrapper {
+    padding:0;
+  }
   .navigation {
     flex-direction: column;
     flex-flow: column;
     flex-wrap: wrap;
     padding: 0;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
   }
   .navigation a {
     text-align: center;
-    padding: 10px;
     border-top: 1px solid rgba(255,255,255,0.3);
     border-bottom: 1px solid rgba(0,0,0,0.1);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .navigation li {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
   }
   .site-wrapper {
     padding-top: 200px;

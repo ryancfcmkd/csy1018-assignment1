@@ -34,3 +34,9 @@
     Card layout is nearly finished just need to fix box shadows
 
     Going to add a animation to a page for a profile image and possibly for some social media links
+
+  04/12/16
+
+    Change folder structure
+
+    Next added a wrapper around the nav and now allows for more custom styling
