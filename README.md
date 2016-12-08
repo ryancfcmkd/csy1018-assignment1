@@ -39,4 +39,16 @@
 
     Change folder structure
 
-    Next added a wrapper around the nav and now allows for more custom styling
+    Next added a wrapper around the nav and now allows for more custom styling it
+
+  06/12/16 - 07/12/16
+
+    Adding in correct Colours and reducing down the shadows to help with the website looking 1dp thick across the website
+    Using feedback and insipration of Youtube.com to help the styling of the site
+
+    Added in a banner image for an F1 Car which I took to help with personality of the site
+    Added Profile Image ready to be added to the header of the website to include a animation
+
+  08/12/16
+
+    The Banner image is now the header for the site and now reduces wasted space and looks for professional and modern and cleaner design
