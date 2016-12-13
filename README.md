@@ -58,3 +58,7 @@
     * Breakpoints work fully now across the points with the correct positioning for items like the site wrapper
     * Reduced the amount div's being used in the html by using more html5 tags like section
     * Each page now has it's layout and the splash image span name changes to further let the user know where they are in the site
+
+    13/12/16 - Update
+
+      Remove unnecessary image from image folder
