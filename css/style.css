@@ -13,6 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 /* Resets the Webkit padding and margins */
 * {
@@ -26,7 +27,7 @@ body {
   width: 100%;
   background-color: #1976d2; /* Dark Primary Colour */
   color: #FFFFFF; /* Font Colour */
-
+  height:
 }
 .navigation_wrapper {
   z-index: 2;
@@ -37,7 +38,7 @@ body {
   min-height: 3em;
 }
 .navigation {
-  z-index: 2;
+  z-index: 3;
   list-style: none;
   margin: 0;
   display: flex;
@@ -58,39 +59,24 @@ body {
   padding-bottom: 1em;
   color: white;
   font-family:  'Roboto', sans-serif;
+  font-size: 1em;
   width: 100%;
   justify-content: center;
   align-items: center;
   align-content: center;
 }
-.navigation ul {
-  padding: 0;
-  width: 100%;
-  text-align: center;
+/*  Highlights current page by using the class in the li which is active and is different on each page  */
+a.active {
+  border-bottom: 0.2em #9E9E9E solid;
 }
-.navigation a:hover {
+/*.navigation a:hover {
   animation: changecolour 1s linear;
-}
+  animation-iteration-count: 1;
+  background-color: red; /*  allows for the animation to end on the 100% colour  */
+/*}*/
 @keyframes changecolour {
   0% {background-color: blue;}
     100% {background-color: red;}
-}
-.main-header {
-  z-index: 2;
-  display: flex;
-  flex: 0 1 auto;
-  /*background-color: lightblue;*/
-  height: 60px;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  font-family: 'Roboto', sans-serif;
-  height: 8em;
-}
-.logo-text {
-  text-align: center;
-  font-family:  'Roboto', sans-serif;
 }
 .site-wrapper {
   z-index: 0;
@@ -99,12 +85,12 @@ body {
   flex: 1 auto;
   margin: 0;
   background-color: #F1F1F1  ;
-  padding-top: 3em; /*  Add together padding from navigation a and font size  */ /* Also this pushes the page down below the nav bar */
+  padding-top: 3.2em; /*  Add together padding from navigation a and font size  */ /* Also this pushes the page down below the nav bar */
   width: 100vw;
 }
 .footer {
   display: flex;
-  flex-grow: 1;
+  flex-grow: 0;
   z-index: 3;
   flex-direction: row;
   justify-content: center;
@@ -114,11 +100,8 @@ body {
   background-color: white;
   bottom: 0;
   width: 100vw;
-/* x y blur radius spread radius colour */
-/*box-shadow: 19px 0 38px rgba(0, 0, 0, 0.30); , 15px 0 12px rgba(0,0,0,0.22);*/
-/*box-shadow: 10px 0 20px rgba(0,0,0,0.19), 6px 0 6px rgba(0,0,0,0.23);*/
-height: 1.5vh;
-border-top: 1px solid #BDBDBD;
+  height: 50px;
+  border-top: 1px solid #BDBDBD;
 }
 .social_wrapper {
   z-index: 2;
@@ -153,7 +136,7 @@ border-top: 1px solid #BDBDBD;
   align-items: center;
   margin-top: 1em;
   border-radius: 5px;
-  padding-bottom: 1em;
+  padding: 1em;
   overflow-x: hidden;
   position: relative;
 }
@@ -174,10 +157,9 @@ border-top: 1px solid #BDBDBD;
   bottom: 0;
 }
 .f1_car {
-z-index: 0;
+  z-index: 0;
   max-width: 100vw;
   width: 100vw;
-
   top: 0;
   left: 0;
   right: 0;
@@ -203,7 +185,7 @@ z-index: 0;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 4px;/* no black bar under image */
   z-index: 1;
   color: rgba(255, 255, 255, 0.8);
   background-color: rgba(0, 0, 0, 0.4);
@@ -217,6 +199,7 @@ z-index: 0;
   align-items: center;
   align-content: center;
 }
+
 /* Breakpoints!!! */
 /* For Some reason this works correctly in chrome dev tools but semi works outside 200px difference */
 @media (max-width:620px) {
@@ -243,8 +226,8 @@ z-index: 0;
     width: 100%;
     padding-left: 0;
     padding-right: 0;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
   }
   /* 0.5 em */
   .navigation li {
@@ -254,28 +237,91 @@ z-index: 0;
     align-content: center;
     text-align: center;
   }
+/*  CHANGE THIS!!! */
+
   .site-wrapper {
-    padding-top: 13em;  /* 0.0625em  */
+    padding-top: 8.8565em;  /* 0.0625em  */
   }
   .social_wrapper {
     flex-direction: column;
     flex-flow: column;
     flex-wrap: wrap;
   }
+  .content_1, .content {
+    width: 90%;
+  }
 }
-/* Screen Breakpoint @ 500px and below for viewport height */
-@media (max-height:500px) {
+@media (min-width:621px) and (max-width:1366px) {
+  .content,.content_1 {
+    width: 80%;
+  }
+  .navigation_wrapper {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+}
+/* Screen Breakpoint @ 720px and below for viewport height */
+@media (max-height:720px) {
 
   .navigation a {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
   }
   .site-wrapper {
-    padding-top: 2em;
+    padding-top: 2em; /* not enough padding */
     width: 100vw;
     max-width: 100vw;
   }
   .navigation_wrapper {
     min-height: 0;
+  }
+}
+@media (max-height:720px) and (max-width:620px) {
+  .navigation_wrapper {
+    padding:0;
+  }
+  .navigation {
+    flex-direction: column;
+    flex-flow: column;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+  }
+  .navigation a {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.3); /* 0.0625em  */
+    border-bottom: 1px solid rgba(0,0,0,0.1); /* 0.0625em  */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  /* 0.5 em */
+  .navigation li {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+/*  CHANGE THIS!!! */
+
+  .site-wrapper {
+    padding-top: 8.8565em;  /* 0.0625em  */
+  }
+  .social_wrapper {
+    flex-direction: column;
+    flex-flow: column;
+    flex-wrap: wrap;
+  }
+  .content_1, .content {
+    width: 90%;
   }
 }
