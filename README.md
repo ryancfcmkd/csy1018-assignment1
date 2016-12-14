@@ -61,4 +61,11 @@
 
     13/12/16 - Update
 
-      Remove unnecessary image from image folder
+      * Remove unnecessary image from image folder
+
+    14/12/16
+
+      * Added titles to links on the nav bar to help the accessibility of the site
+      * Added in feedback form on the contact page
+      * Added in Font Awesome icons
+      * Added in a Contacts Links

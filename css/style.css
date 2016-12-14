@@ -5,9 +5,6 @@ html, body {
   margin: 0;
   padding: 0;
 }
-html {
-overflow-x: hidden;
-}
 body {
   z-index: -1;
   display: flex;
@@ -44,7 +41,7 @@ body {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
-  /*justify-content: space-around;*/
+  justify-content: space-around;
   width: 100%;
   text-align: center;
 }
@@ -123,7 +120,7 @@ a.active {
   align-self: center;
   text-align: center;
 }
-.content, .content_1 /* Styling the content cards, if new cards are need just add here */ {
+.content, .content_1, .content_section_form, .contact_links_card /* Styling the content cards, if new cards are need just add here */ {
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -140,7 +137,7 @@ a.active {
   overflow-x: hidden;
   position: relative;
 }
-.content_1 {
+.content_1, .contact_links_card {
   margin-top: 2em;
   margin-bottom: 1em;
 }
@@ -199,7 +196,59 @@ a.active {
   align-items: center;
   align-content: center;
 }
+/*  Other Pages styling */
+/*  Bio Page */
 
+/*  CV Page */
+
+/* Contact Page */
+.contact_form {
+  display: flex;
+  flex: 0 0 auto;
+  flex-flow: column;
+  align-items: center;
+  width: 80%;
+  font-family: 'Roboto', sans-serif;
+}
+.content_section_form h2 {
+  font-family: 'Roboto', sans-serif;
+  border-bottom: 0.1em #9E9E9E solid;
+  text-align: center;
+  width: 20vw;
+
+}
+fieldset {
+	border: none;
+	padding: 0;
+	width: 100%;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+textarea {
+  font-family: 'Roboto', sans-serif;
+}
+button {
+  font-family: 'Roboto', sans-serif;
+}
+.contact_links_card h2 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin: 0;
+  border-bottom: 0.1em #9E9E9E solid;
+  width: 20vw;
+}
+.contact_links {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+.contact_form_group {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
 /* Breakpoints!!! */
 /* For Some reason this works correctly in chrome dev tools but semi works outside 200px difference */
 @media (max-width:620px) {
@@ -247,12 +296,17 @@ a.active {
     flex-flow: column;
     flex-wrap: wrap;
   }
-  .content_1, .content {
+  .content_1, .content, .content_section_form, .contact_links_card {
     width: 90%;
   }
+  .contact_links {
+    flex-flow: column;
+
+  }
+
 }
 @media (min-width:621px) and (max-width:1366px) {
-  .content,.content_1 {
+  .content, .content_1, .content_section_form, .contact_links_card {
     width: 80%;
   }
   .navigation_wrapper {
@@ -321,7 +375,7 @@ a.active {
     flex-flow: column;
     flex-wrap: wrap;
   }
-  .content_1, .content {
+  .content_1, .content, .content_section_form, .contact_links_card {
     width: 90%;
   }
 }
