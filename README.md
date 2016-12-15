@@ -69,3 +69,12 @@
       * Added in feedback form on the contact page
       * Added in Font Awesome icons
       * Added in a Contacts Links
+
+    15/12/16
+
+      * Applied colour to footer icons by editing the awesome font css stylesheet
+      * Form now aligns down the middle of the screen for the middle point of the fields
+      * Form Breakpoints now correctly work
+
+      * Would like to add a portfolio page for like galleries links so I don't need to compress images
+      * compressed image below 80kb

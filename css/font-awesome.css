@@ -627,6 +627,12 @@
 .fa-twitter:before {
   content: "\f099";
 }
+/*  New Style to allow the footer icons to be coloured  */
+.fa-twitter-footer:before {
+  content: "\f099";
+  color: #0084b4;
+  border-radius: 100%;
+}
 .fa-facebook-f:before,
 .fa-facebook:before {
   content: "\f09a";
@@ -1786,6 +1792,12 @@
 }
 .fa-facebook-official:before {
   content: "\f230";
+
+}
+/*  New Style to allow the footer icons to be coloured  */
+.fa-facebook-official-footer:before {
+  content: "\f230";
+  color: #3b5998;
 }
 .fa-pinterest-p:before {
   content: "\f231";
