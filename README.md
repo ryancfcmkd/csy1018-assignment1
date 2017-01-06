@@ -1,5 +1,9 @@
 # csy1018-assignment1
 
+Github page: ryancfcmkd.github.io/csy1018-assignment1
+
+Updates
+
   08/11/2016
 
     * Created file structure
@@ -78,3 +82,39 @@
 
       * Would like to add a portfolio page for like galleries links so I don't need to compress images
       * compressed image below 80kb
+
+    17/12/16
+
+      * Started Work on the Bio page with a nice layout, the bio page is going to be an area to show who I am
+      * Added Github icon to social_wrapper
+      * Added icons to nav bar to help user interaction and they go to reduce the performance impact on the mobile side of the site
+
+      06/01/2017
+
+        * The Final version of the website for marking
+        * The Bio page has had 3 images added and all the text required
+        * The CV page now has my CV inside the page with nice formatting
+        * Home page now has a profile picture of me, which also pulses twice when the page loads, the animation is smooth.
+        * All images are be optimised on the site but while maintaining a decent qualitiy to the images
+
+
+
+Report Element
+
+    Introduction
+
+        *
+        ![Wireframes 1](/images/Wireframe_WEB_1.png)
+
+    Design
+
+        * Wireframes
+
+
+    Testing
+
+        *
+
+    Improvements
+
+        *

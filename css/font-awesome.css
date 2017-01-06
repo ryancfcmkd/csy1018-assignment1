@@ -204,6 +204,11 @@
 .fa-user:before {
   content: "\f007";
 }
+/* Padding Right for icon */
+.fa-user-header:before {
+  content: "\f007";
+  padding-right: 1em;
+}
 .fa-film:before {
   content: "\f008";
 }
@@ -246,6 +251,12 @@
 .fa-home:before {
   content: "\f015";
 }
+/*  Padding for home icon  */
+.fa-home-header:before {
+  content: "\f015";
+  padding-right: 1em;
+}
+
 .fa-file-o:before {
   content: "\f016";
 }
@@ -313,6 +324,12 @@
 .fa-book:before {
   content: "\f02d";
 }
+/* Padding right for icon */
+.fa-book-header:before {
+  content: "\f02d";
+  padding-right: 1em;
+}
+
 .fa-bookmark:before {
   content: "\f02e";
 }
@@ -2212,6 +2229,11 @@
 .fa-vcard:before,
 .fa-address-card:before {
   content: "\f2bb";
+}
+/*  Padding for icon  */
+.fa-address-card-header:before {
+  content: "\f2bb";
+  padding-right: 1em;
 }
 .fa-vcard-o:before,
 .fa-address-card-o:before {

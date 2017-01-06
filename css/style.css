@@ -24,7 +24,6 @@ body {
   width: 100%;
   background-color: #1976d2; /* Dark Primary Colour */
   color: #FFFFFF; /* Font Colour */
-  height:
 }
 .navigation_wrapper {
   z-index: 2;
@@ -66,11 +65,6 @@ body {
 a.active {
   border-bottom: 0.2em #9E9E9E solid;
 }
-/*.navigation a:hover {
-  animation: changecolour 1s linear;
-  animation-iteration-count: 1;
-  background-color: red; /*  allows for the animation to end on the 100% colour  */
-/*}*/
 @keyframes changecolour {
   0% {background-color: blue;}
     100% {background-color: red;}
@@ -82,7 +76,7 @@ a.active {
   flex: 1 auto;
   margin: 0;
   background-color: #F1F1F1  ;
-  padding-top: 3.2em; /*  Add together padding from navigation a and font size  */ /* Also this pushes the page down below the nav bar */
+  padding-top: 4em; /*  Add together padding from navigation a and font size  */ /* Also this pushes the page down below the nav bar */
   width: 100%;
   overflow-x: hidden;
 }
@@ -121,7 +115,7 @@ a.active {
   align-self: center;
   text-align: center;
 }
-.content, .content_1, .content_section_form, .contact_links_card /* Styling the content cards, if new cards are need just add here */ {
+.content, .content_1, .content_section_form, .contact_links_card, .content_bio, .CVSection /* Styling the content cards, if new cards are need just add here */ {
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -137,6 +131,51 @@ a.active {
   padding: 1em;
   overflow-x: hidden;
   position: relative;
+}
+.content {
+  margin-bottom: 1.5em;
+}
+.iconlink:visited {
+  text-decoration: none;
+}
+.contact_links a {
+  color: inherit;
+}
+.welcome {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 1em;
+  border-bottom: 2px solid #e2e2e2;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content_flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.welcome_content {
+
+  display: flex;
+  flex: 1 0 auto;
+  width: 30%;
+  flex-wrap: wrap;
+  padding: 1em;
+  justify-content: center;
+}
+.about_me_left {
+  display: flex;
+  flex: 2 0 auto;
+  width: 70%;
+  text-align: center;
+  justify-content: center;
+  flex-flow: column;
+  font-family: 'Roboto', sans-serif;
+
 }
 .content_1, .contact_links_card {
   margin-top: 2em;
@@ -185,8 +224,7 @@ a.active {
   bottom: 4px;/* no black bar under image */
   z-index: 1;
   color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.45);
   width: 100%;
   height: inherit;
   font-family: 'Roboto', sans-serif;
@@ -196,10 +234,127 @@ a.active {
   align-items: center;
   align-content: center;
 }
+.welcome_profile_pic {
+  width: 20%;
+  border-radius: 50%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  animation-name: pulseimg;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+}
+@keyframes pulseimg  {
+   0%, 100% {transform: scale(1);}
+   50% {transform: scale(1.2);}
+
+}
 /*  Other Pages styling */
 /*  Bio Page */
+.stadiumMKPhoto {
+  margin-right: 1em;
+  width: 100%;
+  align-items: center;
+}
+.f1CAR_bio {
+  width: 100%;
+  align-items: center;
+  margin-left: 1em;
+}
+.coffee_image {
+  width: 25%;
+  justify-content: flex-start;
+  display: flex;
+  padding-right: 1em;
+}
+.coffee_paragraph {
+  display: flex;
+  justify-content: flex-end;
+}
+.coffee {
+  display: flex;
+  flex-direction: row;
+}
+.coffeeH2 {
+  vertical-align: top;
+  flex-direction: column;
 
+}
+.sports, .football, .f1, .coffee, .music, .photography {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  align-items: center;
+}
+h1{
+font-family: 'Roboto', sans-serif;
+}
+.sports {
+  width: 100%;
+}
+.football_f1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+}
+.football {
+  display: flex;
+  flex: 1 0 auto;
+
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+  flex-flow: column;
+  font-family: 'Roboto', sans-serif;
+}
+.f1 {
+  display: flex;
+  flex: 1 0 auto;
+
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+  flex-flow: column;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  vertical-align: top;
+}
+.content_bio {
+  margin-bottom: 1.5em;
+}
+h4 {
+  font-family: 'Roboto', sans-serif;  
+}
 /*  CV Page */
+p {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  width: 95%;
+}
+.keyskilllist, .grades {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  list-style: none;
+}
+h2 {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: underline;
+}
+h3 {
+  font-family: 'Roboto', sans-serif;
+}
+.CVSection {
+  margin-bottom: 1.5em;
+}
+.profile_pic {
+width: 20%;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
 
 /* Contact Page */
 .contact_form {
@@ -269,6 +424,9 @@ button {
   align-content: center;
 
 }
+.contact_links_card {
+  margin-bottom: 1.5em;
+}
 .contact_links_card h2 {
   font-family: 'Roboto', sans-serif;
   text-align: center;
@@ -289,6 +447,32 @@ button {
   justify-content: space-around;
   width: 80%;
 }
+/*  Keyframe animation which increases the scale of icons   */
+@keyframes scaleicons {
+  0% {
+    transform: scale(1);}
+    50% { transform: scale(1.25);}
+      100% { transform: scale(1.5);}
+}
+i.twitter_logo:hover  {
+  animation-name: scaleicons;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+i.facebook_logo:hover {
+  animation-name: scaleicons;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+i.github_icon:hover {
+  animation-name: scaleicons;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
 /* Breakpoints!!! */
 /* For Some reason this works correctly in chrome dev tools but semi works outside 200px difference */
 @media (max-width:620px) {
@@ -306,7 +490,7 @@ button {
     width: 100%;
   }
   .navigation a {
-    text-align: center;
+    /*text-align: center;*/
     border-top: 1px solid rgba(255,255,255,0.3); /* 0.0625em  */
     border-bottom: 1px solid rgba(0,0,0,0.1); /* 0.0625em  */
     justify-content: center;
@@ -318,25 +502,28 @@ button {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
   }
+  .navigation i {
+    display: none;
+  }
   /* 0.5 em */
   .navigation li {
     width: 100%;
     justify-content: center;
     align-items: center;
     align-content: center;
-    text-align: center;
+    /*text-align: center;*/
   }
 /*  CHANGE THIS!!! */
 
   .site-wrapper {
-    padding-top: 9.1565em;  /* 0.0625em  */
+    padding-top: 9.15em;  /* 0.0625em  */
   }
   .social_wrapper {
     flex-direction: column;
     flex-flow: column;
     flex-wrap: wrap;
   }
-  .content_1, .content, .content_section_form, .contact_links_card {
+  .content_1, .content, .content_section_form, .contact_links_card, .content_bio, .CVSection {
     width: 90%;
   }
   .contact_links {
@@ -359,10 +546,33 @@ button {
 .content_section_form h2 {
   width: 60vw;
 }
+.content_flex {
+  flex-direction: column;
+}
+.football_f1 {
+  flex-direction: column;
+}
+.about_me_left, .welcome_content {
+  width: 90%;
+}
+.coffee_paragraph {
+  display: flex;
+  justify-content: flex-end;
+}
+.coffee {
+  display: flex;
+  flex-direction: column;
+}
+.football {
+  width: 90%;
+}
+.f1{
+  width: 90%;
+}
 
 }
 @media (min-width:621px) and (max-width:1366px) {
-  .content, .content_1, .content_section_form, .contact_links_card {
+  .content, .content_1, .content_section_form, .contact_links_card, .content_bio, .CVSection {
     width: 80%;
   }
   .navigation_wrapper {
@@ -423,14 +633,14 @@ button {
 /*  CHANGE THIS!!! */
 
   .site-wrapper {
-    padding-top: 9.1565em;  /* 0.0625em  */
+    padding-top: 9.15em;  /* 0.0625em  */
   }
   .social_wrapper {
     flex-direction: column;
     flex-flow: column;
     flex-wrap: wrap;
   }
-  .content_1, .content, .content_section_form, .contact_links_card {
+  .content_1, .content, .content_section_form, .contact_links_card, .content_bio, .CVSection {
     width: 90%;
   }
   .contact_links {
@@ -452,5 +662,28 @@ button {
   }
   .content_section_form h2 {
     width: 60vw;
+  }
+  .content_flex {
+    flex-direction: column;
+  }
+  .football_f1 {
+    flex-direction: column;
+  }
+  .navigation i {
+    display: none;
+  }
+  .coffee_paragraph {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .coffee {
+    display: flex;
+    flex-direction: column;
+  }
+  .football {
+    width: 90%;
+  }
+  .f1{
+    width: 90%;
   }
 }
