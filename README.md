@@ -96,25 +96,4 @@ Updates
         * The CV page now has my CV inside the page with nice formatting
         * Home page now has a profile picture of me, which also pulses twice when the page loads, the animation is smooth.
         * All images are be optimised on the site but while maintaining a decent qualitiy to the images
-
-
-
-Report Element
-
-    Introduction
-
-        *
-        ![Wireframes_1](/images/Wireframe_WEB_1.png "Wireframe Homepage")
-
-    Design
-
-        * Wireframes
-
-
-    Testing
-
-        *
-
-    Improvements
-
-        *
+        * Added in a Favicon
