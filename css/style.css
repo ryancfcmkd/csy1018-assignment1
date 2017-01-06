@@ -145,6 +145,10 @@ a.active {
     align-self: center;
     text-align: center;
 }
+/*  This makes the link colour the set colour for the icons in the font awesome style sheet  */
+.social_wrapper a {
+    color: inherit;
+}
 
 .content, .content_1, .content_section_form, .contact_links_card, .content_bio, .CVSection
 /* Styling the content cards, if new cards are need just add here */
