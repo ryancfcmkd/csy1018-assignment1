@@ -104,7 +104,7 @@ Report Element
     Introduction
 
         *
-        ![Wireframes 1](/images/Wireframe_WEB_1.png)
+        ![Wireframes_1](/images/Wireframe_WEB_1.png "Wireframe Homepage")
 
     Design
 
