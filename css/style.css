@@ -77,20 +77,6 @@ body {
     align-content: center;
 }
 
-
-/*  Highlights current page by using the class in the li which is active and is different on each page  */
-
-a.active {
-    border-bottom: 0.2em #9E9E9E solid;
-}
-
-@keyframes changecolour {
-    0% {
-        background-color: blue;
-    }
-    100% {
-        background-color: red;
-    }
 }
 
 .site-wrapper {
@@ -219,15 +205,13 @@ a.active {
     justify-content: center;
     flex-flow: column;
     font-family: 'Roboto', sans-serif;
-    margin-left: 1em;
+    margin-left: 1em; /* pushs the content in */
 }
 
 .content_1, .contact_links_card {
     margin-top: 2em;
     margin-bottom: 1em;
 }
-
-
 /* Banner Image */
 
 .image-banner-container {
