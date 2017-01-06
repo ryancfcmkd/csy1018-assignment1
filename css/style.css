@@ -219,6 +219,7 @@ a.active {
     justify-content: center;
     flex-flow: column;
     font-family: 'Roboto', sans-serif;
+    margin-left: 1em;
 }
 
 .content_1, .contact_links_card {
