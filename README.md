@@ -97,3 +97,8 @@ Updates
         * Home page now has a profile picture of me, which also pulses twice when the page loads, the animation is smooth.
         * All images are be optimised on the site but while maintaining a decent qualitiy to the images
         * Added in a Favicon
+
+      07/01/2017
+
+        * Fixed Some Errors
+        * HTML vaildation throws only warnings that I should add headers but the tags are being used as wrappers or don't require a header 
