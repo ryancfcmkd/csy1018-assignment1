@@ -77,6 +77,9 @@ body {
     align-content: center;
 }
 
+.active {
+  border-bottom: solid #9E9E9E 3px;
+}
 
 .site-wrapper {
     z-index: 0;
